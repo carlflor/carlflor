@@ -6,6 +6,8 @@
     line-height: 1.5em;
     background: #f5f5f5;
     color: #2a2a2a;
+    max-width: 1200px;
+    margin: 0 auto;
 
     --link-color: #3c82cb;
 }
