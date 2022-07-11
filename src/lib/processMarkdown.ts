@@ -1,4 +1,3 @@
-import {read} from 'to-vfile'
 import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkRehype from 'remark-rehype'
@@ -8,9 +7,7 @@ import remarkExtractFrontmatter from "remark-extract-frontmatter"
 import remarkStringify from "remark-stringify";
 import yaml from 'yaml';
 
-const processMarkdown = async (absoluteFilePath: any) => {
-    const file = await read(absoluteFilePath);
-
+const processMarkdown = async (md: string | any) => {
     let pipeline = await unified()
         .use(remarkParse)
         .use(remarkFrontmatter, ["yaml"])
@@ -18,7 +15,7 @@ const processMarkdown = async (absoluteFilePath: any) => {
         .use(remarkExtractFrontmatter, { yaml: yaml.parse })
         .use(remarkRehype)
         .use(rehypeStringify)
-        .process(file)
+        .process(md)
 
     return {
         metadata: pipeline.data,
