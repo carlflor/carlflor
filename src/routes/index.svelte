@@ -1,16 +1,9 @@
-<script>
-    import { fade } from 'svelte/transition';
-    let visible = false;
-    setTimeout(() => { visible = true}, 500)
-</script>
-
 <svelte:head>
 	<title>carlflor</title>
 	<meta name="description" content="I like helping people by writing code" />
 </svelte:head>
 
-{#if visible}
-<section transition:fade="{{ duration: 200 }}" class="home">
+<section class="home">
     <h1 class="greeting">🙋🏻‍♂ Hi!</h1>
     <p class="bio">
         I am Carl Flor, and I am currently working as a senior software engineer at <a class="desc-link" href="https://www.grab.com/sg/" target="_blank">Grab</a> in Singapore. I like working on projects that make people's lives easier. My favorite tool is Javascript, while I sometimes dabble with Golang and Ruby. Once in a while, I dedicate my weekends teaching coding.
@@ -20,8 +13,6 @@
         Feel free to drop me a message at <a class="desc-link" href="mailto:hello@carlflor.com" target="_top">hello@carlflor.com</a> for anything.
     </p>
 </section>
-{/if}
-
 
 <style>
     .home {
