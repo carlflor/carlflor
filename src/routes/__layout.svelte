@@ -8,11 +8,11 @@
 
 {#if visible}
 <main transition:fade="{{ duration: 200 }}">
-    <div>
+    <!-- <div>
         <a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/notes">Notes</a>
-    </div>
+    </div> -->
     <slot />
 </main>
 {/if}

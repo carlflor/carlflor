@@ -8,6 +8,7 @@
     color: #2a2a2a;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 
     --link-color: #3c82cb;
 }
