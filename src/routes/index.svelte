@@ -9,7 +9,7 @@
         I am Carl Flor, a software engineer who likes to build things that make people's lives a little easier.
     </p>
     <p class="bio">
-        I currently work at <a class="desc-link" href="https://www.grab.com/sg/" target="_blank">Grab</a> where I build tools and systems that make customer support journey more pleasant. My favorite tool is Javascript, while I sometimes dabble with Golang and Ruby. Once in a while, I dedicate my weekends teaching coding.
+        I currently work at <a class="desc-link" href="https://www.grab.com/sg/" target="_blank">Grab</a> where I build tools and systems that make customer support journey more pleasant. My favorite tool is Javascript, while I sometimes dabble with Golang and Ruby. Once in a while, I dedicate my weekends <a class="desc-link" href="https://www.linkedin.com/feed/update/urn:li:share:6884006384460009472?utm_source=linkedin_share&utm_medium=member_desktop_share&utm_content=post">teaching coding</a>.
         When I am not coding, I am most likely taking <a class="desc-link" href="https://www.flickr.com/photos/132863000@N07/" target="_blank">pictures</a> or <a class="desc-link" href="https://media.giphy.com/media/6fScAIQR0P0xW/giphy.gif" target="_blank">dancing</a>.
     </p>
     <p class="email">
