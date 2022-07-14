@@ -1,19 +1,5 @@
-# carl's v2 website
+# Hi! My name is Carl.
 
-Hi, you are currently viewing the repository of my website. Have a good day!
+I'm a software engineer who likes to build things that make people's lives a little easier.
 
-## commands:
 
-``` bash
-# setup project
-pnpm install
-
-# start local development
-pnpm run dev
-
-# create production version of app
-pnpm run build
-
-# preview the production build
-pnpm run preview
-```

@@ -1,12 +1,12 @@
 <svelte:head>
-	<title>carlflor</title>
+	<title>Carl Flor</title>
 	<meta name="description" content="I like helping people by writing code" />
 </svelte:head>
 
 <section class="home">
     <h1 class="greeting">🙋🏻‍♂ Hi!</h1>
     <p class="bio">
-        I am Carl Flor, a software engineer who likes building things that make people's lives a little easier.
+        I am Carl Flor, a software engineer who likes to build things that make people's lives a little easier.
     </p>
     <p class="bio">
         I currently work at <a class="desc-link" href="https://www.grab.com/sg/" target="_blank">Grab</a> where I build tools and systems that make customer support journey more pleasant. My favorite tool is Javascript, while I sometimes dabble with Golang and Ruby. Once in a while, I dedicate my weekends teaching coding.
@@ -24,7 +24,7 @@
         font-size: 1.1em;
         line-height: 1.6em;
     }
-    
+
     .greeting {
         margin-top: 150px;
         font-size: 2.5em;
