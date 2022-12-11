@@ -1,26 +1,27 @@
 import processMarkdown from "$lib/processMarkdown";
 import slugFromPath from "$lib/slugFromPath";
 
-export async function get({ params }) {
+export const prerender = true
 
-    const modules = import.meta.glob(`../../posts/*.md`, { as: "raw" });
+export async function load({params}) {
+    const modules = import.meta.glob(`../../../posts/*.md`, { as: "raw" });
 
-    for (const [filePath, contentString] of Object.entries(modules)) {
-
+    for (const [filePath, loadContent] of Object.entries(modules)) {
         if (slugFromPath(filePath) === params.slug) {
+            const contentString = await loadContent();
             const content = await processMarkdown(contentString);
+
             const { metadata, html } = content;
 
             return {
-                body: {
+                post: {
                     metadata,
                     html,
-                },
+                }
             }
         }
     }
 
-    return {
-        status: 404,
-    }
+
+    return { post: {}}
 }
