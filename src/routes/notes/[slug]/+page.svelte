@@ -1,16 +1,6 @@
-<script context="module" lang="ts">
-    export async function load({url, fetch}) {
-  
-      const post = await fetch(`${url.pathname}.json`).then((r) => r.json())
-  
-      return {
-          props: {post}
-      }
-    }
-</script>
-
 <script lang="ts">
-    export let post: any;
+    export let data: any;
+    let { post } = data;
 </script>
 
 <svelte:head>

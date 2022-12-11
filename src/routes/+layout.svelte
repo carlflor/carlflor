@@ -1,13 +1,9 @@
-
-<script lang="ts">
+<script context="module">
+    export const prerender = true
     import "../app.css"
-    import { fade } from 'svelte/transition';
-    let visible = false;
-    setTimeout(() => { visible = true}, 500)
 </script>
 
-{#if visible}
-<main transition:fade="{{ duration: 200 }}">
+<main>
     <!-- <div>
         <a href="/">Home</a>
         <a href="/about">About</a>
@@ -15,4 +11,3 @@
     </div> -->
     <slot />
 </main>
-{/if}
