@@ -12,7 +12,7 @@
 </script>
 
 {#if visible}
-<section class="home" in:fade="{{ delay: 300, duration: 200 }}">
+<section class="home" in:fade="{{ delay: 700, duration: 200 }}">
     <h1 class="greeting">🙋🏻‍♂ Hi!</h1>
     <p class="bio">
         I am Carl Flor, a software engineer who likes to build things that make people's lives a little easier.
